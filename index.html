@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shreyas Daga | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Navbar -->
   <header>
-    <nav>
-      <h1>Shreyas Daga</h1>
-      <ul>
+    <nav class="navbar">
+      <div class="logo">Shreyas Daga</div>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
@@ -24,45 +25,65 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <h2>Aspiring Product Manager | Ex-Goldman Sachs | MBA Candidate at BITSoM</h2>
-    <p>Passionate about product strategy, data-driven problem solving, and building impactful experiences.</p>
-    <div class="cta">
-      <a href="Shreyas_Daga_final_CV.pdf" target="_blank" class="btn">Download Resume</a>
-      <a href="https://linkedin.com/in/your-link" target="_blank" class="btn secondary">Connect on LinkedIn</a>
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Shreyas Daga</span></h1>
+      <h2>Aspiring Product Manager | Ex-Goldman Sachs | MBA Candidate at BITSoM</h2>
+      <p>Passionate about product strategy, data-driven problem solving, and building impactful user experiences.</p>
+      <div class="cta">
+        <a href="Shreyas_Daga_final_CV.pdf" target="_blank" class="btn primary">Download Resume</a>
+        <a href="https://linkedin.com/in/your-link" target="_blank" class="btn secondary">LinkedIn</a>
+      </div>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about">
+  <section id="about" class="section fade-in">
     <h2>About Me</h2>
-    <p>I’m Shreyas, an MBA candidate at BITSoM with prior experience at Goldman Sachs in regulatory change management and Vodafone Idea in product marketing. Beyond work, I love sports, photography, and continuous learning.</p>
+    <p>
+      I’m Shreyas, an MBA candidate at BITSoM with prior experience at Goldman Sachs in regulatory change 
+      management and Vodafone Idea in product marketing. Beyond work, I love sports, photography, and 
+      continuous learning. I thrive in collaborative environments where adaptability and creativity matter.
+    </p>
   </section>
 
   <!-- Experience -->
-  <section id="experience">
+  <section id="experience" class="section fade-in">
     <h2>Experience</h2>
-    <div class="card">
-      <h3>Goldman Sachs – Analyst</h3>
-      <p>Streamlined regulatory change projects, improved efficiency with BI/automation, and drove cross-functional collaboration.</p>
-    </div>
-    <div class="card">
-      <h3>Vodafone Idea – Product Marketing Intern</h3>
-      <p>Led performance marketing campaigns, boosted app installs by 15%, and partnered with Ogilvy/Wavemaker on creative strategy.</p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Goldman Sachs – Analyst</h3>
+        <span class="duration">Jan 2022 – Jul 2023</span>
+        <p>Streamlined regulatory change projects, implemented BI/automation, and optimized workflows across global teams.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Vodafone Idea – Product Marketing Intern</h3>
+        <span class="duration">Apr 2025 – May 2025</span>
+        <p>Boosted app installs by 15%, improved CTR by 30%, and collaborated with Ogilvy & Wavemaker on data-driven campaigns.</p>
+      </div>
     </div>
   </section>
 
   <!-- Education -->
-  <section id="education">
+  <section id="education" class="section fade-in">
     <h2>Education</h2>
-    <ul>
-      <li><strong>MBA</strong> – BITSoM, Mumbai (Class of 2026)</li>
-      <li><strong>B.Tech ECE</strong> – MIT, Manipal (8.96/10)</li>
-      <li><strong>School</strong> – 96% in XII, 10/10 CGPA in X</li>
-    </ul>
+    <div class="cards">
+      <div class="card">
+        <h3>MBA</h3>
+        <p>BITSoM, Mumbai | Class of 2026</p>
+      </div>
+      <div class="card">
+        <h3>B.Tech (ECE)</h3>
+        <p>MIT Manipal | CGPA: 8.96/10</p>
+      </div>
+      <div class="card">
+        <h3>School</h3>
+        <p>96% in XII | 10/10 in X | Top ranks</p>
+      </div>
+    </div>
   </section>
 
   <!-- Leadership -->
-  <section id="leadership">
+  <section id="leadership" class="section fade-in">
     <h2>Leadership & Responsibilities</h2>
     <ul>
       <li>General Secretary – Sports Club, BITSoM</li>
@@ -72,14 +93,14 @@
   </section>
 
   <!-- Achievements -->
-  <section id="achievements">
+  <section id="achievements" class="section fade-in">
     <h2>Achievements & Certifications</h2>
     <p><strong>Sports:</strong> Best Athlete (twice), Basketball champion.</p>
     <p><strong>Certifications:</strong> IBM Product Management, Alteryx Core, Tableau, Google Analytics & BI Specializations.</p>
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <section id="contact" class="section fade-in">
     <h2>Contact</h2>
     <form>
       <input type="text" placeholder="Your Name" required />
@@ -87,12 +108,16 @@
       <textarea placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
     </form>
-    <p>Or connect via <a href="mailto:your-email@gmail.com">Email</a> | <a href="https://linkedin.com/in/your-link">LinkedIn</a></p>
+    <p class="socials">
+      Or connect via 
+      <a href="mailto:your-email@gmail.com">Email</a> | 
+      <a href="https://linkedin.com/in/your-link">LinkedIn</a>
+    </p>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Shreyas Daga</p>
+    <p>© 2025 Shreyas Daga | Built with ❤️</p>
   </footer>
 </body>
 </html>
-
